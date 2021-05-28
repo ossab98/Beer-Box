@@ -1,4 +1,4 @@
-# Birreria
+# Beer Box
 <img src="https://img.shields.io/badge/platform-iOS-blue.svg?style=flat" alt="Platform iOS" />
 
 ## Requirements
