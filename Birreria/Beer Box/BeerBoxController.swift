@@ -39,6 +39,8 @@ class BeerBoxController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationController?.hidesBarsOnSwipe = true
+        
         appendDemoOffers()
         getBeers()
         setUpView()
@@ -53,6 +55,7 @@ class BeerBoxController: UIViewController, UITextFieldDelegate {
         navigationController?.navigationBar.backgroundColor = Config.white
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: semiBold(Config.title),
         NSAttributedString.Key.foregroundColor : Config.white!]
+        
         
         // Poll to refresh TableView and get new data
         refreshTableView()
@@ -125,6 +128,16 @@ extension BeerBoxController: UITableViewDelegate, UITableViewDataSource, UIScrol
     }
     
     //MARK:- Pagination to get new data
+    
+    // Hide NavigationBar when scrolling
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if scrollView.panGestureRecognizer.translation(in: scrollView).y < 0 {
+            navigationController?.setNavigationBarHidden(true, animated: true)
+        } else {
+            navigationController?.setNavigationBarHidden(false, animated: true)
+        }
+    }
+    
     // scrollViewDidEndDragging
     public func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool){
         if !decelerate{
