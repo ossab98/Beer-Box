@@ -8,7 +8,7 @@
 ## Libraries and API used in this project
 
 * [Alamofire](https://github.com/Alamofire/Alamofire) For async web requests handling.
-* [SDWebImage](https://github.com/Alamofire/Alamofire) This library provides an async image downloader with cache support.
+* [SDWebImage](https://github.com/SDWebImage/SDWebImage) This library provides an async image downloader with cache support.
 * [Punkapi](https://punkapi.com) To get the details of Beer Box.
 
 ## Author
