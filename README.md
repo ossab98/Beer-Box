@@ -9,7 +9,7 @@
 
 * [Alamofire](https://github.com/Alamofire/Alamofire) For async web requests handling.
 * [SDWebImage](https://github.com/Alamofire/Alamofire) This library provides an async image downloader with cache support.
-* [Punkapi](https://pokeapi.co) To get the details of Beer Box.
+* [Punkapi](https://punkapi.com) To get the details of Beer Box.
 
 ## Author
 - [Ossama Abdelwahab](https://github.com/ossab98)
