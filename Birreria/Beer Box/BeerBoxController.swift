@@ -39,7 +39,6 @@ class BeerBoxController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationController?.hidesBarsOnSwipe = true
         
         appendDemoOffers()
         getBeers()
